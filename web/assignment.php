@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<title>Zach Heiners Home Page</title>
+    	<title>Zach Heiners Assignment Page</title>
     	
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="home.css">
@@ -19,6 +19,9 @@
       					</li>
                 <li class="nav-item">
                   <a class="nav-link active" href="assignment.php">ASSIGNMENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="account.php">CREATE ACCOUNT</a>
                 </li>
     				</ul>
     				<form class="form-inline my-2 my-lg-0">

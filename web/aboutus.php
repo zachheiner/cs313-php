@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<title>Zach Heiners Home Page</title>
+    	<title>About Us</title>
     	
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="home.css">
@@ -20,6 +20,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="assignment.php">ASSIGNMENTS</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="account.php">CREATE ACCOUNT</a>
+                </li>
     				</ul>
     				<form class="form-inline my-2 my-lg-0">
       					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -34,7 +37,7 @@
           echo "<br>";
           echo "<h1>HI, I'M ZACH AND I LOVE SHOES</h1>";
           echo "<br>";
-          echo "<main>I AM ZACH, THE CEO OF SHOELIT. HERE AT SHOE LIT WE LOVE SHOES. SO MUCH SO THAT I AM DEDICATED TO HELPING OTHERS TO SHARING THEIR FAVORTIE SHOES. MOST PEOPLE WON'T UNDERSTAND HOW YOU FEEL ABOUT SHOES. WE DO. SHARE AWAY!</main>";
+          echo "<main>I AM ZACH, THE CEO OF SHOELIT. HERE AT SHOE LIT WE LOVE SHOES. SO MUCH SO THAT I AM DEDICATED TO HELPING OTHERS SHARE THEIR FAVORTIE SHOES. MOST PEOPLE WON'T UNDERSTAND HOW YOU FEEL ABOUT SHOES. WE DO. SHARE AWAY!</main>";
           echo "<br>";
           echo "<br>";
           echo "<br>";
