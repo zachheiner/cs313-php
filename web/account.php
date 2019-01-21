@@ -18,10 +18,10 @@
 									<a class="nav-link" href="aboutus.php">ABOUT US</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="assignment.php">ASSIGNMENTS</a>
+									<a class="nav-link" href="assignment.php">ASSIGNMENTS</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="account.php">CREATE ACCOUNT</a>
+									<a class="nav-link active" href="account.php">CREATE ACCOUNT</a>
 								</li>
 						</ul>
 						<form class="form-inline my-2 my-lg-0">
