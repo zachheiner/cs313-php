@@ -1,17 +1,25 @@
 <?php
 if (array_key_exists('username', $_POST) && array_key_exists('password', $_POST)) {
   // Communicate with postgres database verify username/pass
-  $host        = "host = 127.0.0.1";
-  $port        = "port = 5432";
-  $dbname      = "dbname = shoelit";
-  $credentials = "user = postgres password=Techtastic1206";
+  try {
+    $dbUrl = getenv('DATABASE_URL');
 
-  $db = pg_connect( "$host $port $dbname $credentials"  );
-  if(!$db) {
-    echo "Error : Unable to open database\n";
-  } else {
-    echo "Opened database successfully\n";
+    $dbOpts = parse_url($dbUrl);
+
+    $dbHost = $dbOpts["host"];
+    $dbPort = $dbOpts["port"];
+    $dbUser = $dbOpts["user"];
+    $dbPassword = $dbOpts["pass"];
+    $dbName = ltrim($dbOpts["path"],'/');
+
+    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch (PDOException $ex) {
+    echo 'Error!: ' . $ex->getMessage();
+    die();
   }
+  echo "connected to db";
 }
 ?>
 <!DOCTYPE html>
