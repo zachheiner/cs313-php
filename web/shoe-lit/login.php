@@ -6,13 +6,14 @@ if (is_array($_POST) && array_key_exists('username', $_POST) && array_key_exists
   require_once('database.php');
 
   // Load the database
-  $db = new Database('postgres', 'Techtastic1206', 'shoelit');
+  // $db = new Database('postgres', 'Techtastic1206', 'shoelit');
+  $db = new Database();
 
   // Check to see if we're registering
   if (array_key_exists('register', $_POST)) {
     // Handle the optional field for an avatar
     $avatar = array_key_exists('avatar', $_POST) ? $_POST['avatar'] : null;
-    
+
     if ( $db->registerUser($_POST['username'], $_POST['password'], $_POST['password2'], $avatar) ) {
       // Make sure these values are non-existant so that the page loads with the login screen, not the registration screen
       unset($_POST['register']);

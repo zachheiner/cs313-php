@@ -11,7 +11,8 @@ class API {
 
   public function __construct($args) {
     // Load the database
-    $this->db = new Database('postgres', 'Techtastic1206', 'shoelit');
+    // $this->db = new Database('postgres', 'Techtastic1206', 'shoelit');
+    $this->db = new Database();
 
     // Save the args
     $this->args = $args;

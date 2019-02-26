@@ -2,7 +2,8 @@
 
 require_once('./database.php');
 
-$db = new Database('postgres', 'Techtastic1206', 'shoelit');
+// $db = new Database('postgres', 'Techtastic1206', 'shoelit');
+$db = new Database();
 
 if (array_key_exists('newBrand', $_POST)) {
   if ($db->createBrand($_POST['brandName']))

@@ -3,9 +3,24 @@
 class Database {
   public $db = null;
 
-  public function __construct($username, $password, $database) {
+  // public function __construct($username, $password, $database) {
+  public function __construct() {
+    $dbUrl = getenv('DATABASE_URL');
+
+    $dbOpts = parse_url($dbUrl);
+  
+    $dbHost = $dbOpts["host"];
+    $dbPort = $dbOpts["port"];
+    $dbUser = $dbOpts["user"];
+    $dbPassword = $dbOpts["pass"];
+    $dbName = ltrim($dbOpts["path"],'/');
+  
+    $this->db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+  
+    $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
     // Initialize a connecton to the database
-    $this->db = new PDO("pgsql:host=localhost;dbname=$database", $username, $password);
+    // $this->db = new PDO("pgsql:host=localhost;dbname=$database", $username, $password);
   }
 
   public function query($sql, $params = array()) {

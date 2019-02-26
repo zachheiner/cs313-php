@@ -7,7 +7,8 @@ require_once('./database.php');
 
 verifyLoggedIn();
 
-$db = new Database('postgres', 'Techtastic1206', 'shoelit');
+// $db = new Database('postgres', 'Techtastic1206', 'shoelit');
+$db = new Database();
 
 $currentPage = array_key_exists('page', $_GET) ? $_GET['page'] : 1;
 
