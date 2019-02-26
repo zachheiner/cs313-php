@@ -1,19 +1,20 @@
 After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
 
 1. Provide a link to your myDb.sql file at GitHub (the file that contains all the SQL commands needed to create your database).
-
+https://github.com/zachheiner/cs313-php/blob/master/db/mydb.sql
 
 2. Describe something from your database that you think came together very nicely.
-
+I had a hard time under standing the relationships that I woul dneed to make sure that the app worked correctly. I feel that the thing that came together the best was that most of my tables are a one to many making the table transition easy, and the one aet of table that are many to many should be easy to integrate what I want into them.
 
 3. Describe something from your database that you think could be improved or extended in the future.
-
+	I feel that there may be some things that need to be adjusted int he future to make sure that things go the way that I want them to. I feel that this may come with the relationships describing the type of shoes that people will have as photos. 
 
 4. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+	I think it is interesting that databases can be so simple and yet at the same time, hold such complexity to them. When you understand how they work, it is almost like they unlock and you can easily understand them.
 
 5. Briefly describe two principles of good database design.
-
+1. Define the purpose behind the database. This will allow you to organizes the information easier.
+2. Split the information into tables, and if needed split those into further tables.
 
 6. Please select the category you feel best describes your assignment:
 1 - Some attempt was made
