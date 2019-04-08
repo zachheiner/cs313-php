@@ -1,0 +1,25 @@
+{
+  "name": "shoe-lit2",
+  "version": "1.0.0",
+  "description": "A webapp for shoe pictures",
+  "main": "login.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "vue": "^2.6.10",
+    "vuetify": "^1.5.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachheiner/cs313-php.git"
+  },
+  "author": "Zach Heiner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachheiner/cs313-php/issues"
+  },
+  "homepage": "https://github.com/zachheiner/cs313-php#readme"
+}
